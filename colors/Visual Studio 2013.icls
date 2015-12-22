@@ -2,7 +2,7 @@
   <option name="LINE_SPACING" value="1.0" />
   <option name="EDITOR_FONT_SIZE" value="12" />
   <option name="CONSOLE_FONT_NAME" value="Menlo" />
-  <option name="EDITOR_FONT_NAME" value="Meslo LG M DZ for Powerline" />
+  <option name="EDITOR_FONT_NAME" value="Source Code Pro for Powerline" />
   <colors>
     <option name="ADDED_LINES_COLOR" value="295622" />
     <option name="CARET_COLOR" value="bbbbbb" />
@@ -61,6 +61,16 @@
         <option name="FOREGROUND" value="c8c8c8" />
         <option name="EFFECT_COLOR" value="c8c8c8" />
         <option name="EFFECT_TYPE" value="1" />
+      </value>
+    </option>
+    <option name="BASH.HERE_DOC">
+      <value>
+        <option name="BACKGROUND" value="696969" />
+      </value>
+    </option>
+    <option name="BASH.INTERNAL_COMMAND">
+      <value>
+        <option name="FOREGROUND" value="c8f95" />
       </value>
     </option>
     <option name="BREAKPOINT_ATTRIBUTES">
@@ -546,16 +556,10 @@
         <option name="FOREGROUND" value="bd63c5" />
       </value>
     </option>
-    <option name="OC.MACRO_PARAMETER">
-      <value />
-    </option>
     <option name="OC.PARAMETER">
       <value>
         <option name="FOREGROUND" value="808080" />
       </value>
-    </option>
-    <option name="OC.STRUCT_FIELD">
-      <value />
     </option>
     <option name="OC.STRUCT_LIKE">
       <value>
