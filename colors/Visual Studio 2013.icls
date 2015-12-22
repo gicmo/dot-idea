@@ -561,11 +561,6 @@
         <option name="FOREGROUND" value="808080" />
       </value>
     </option>
-    <option name="OC.STRUCT_FIELD">
-      <value>
-        <option name="FOREGROUND" value="c97a38" />
-      </value>
-    </option>
     <option name="OC.STRUCT_LIKE">
       <value>
         <option name="FOREGROUND" value="4ec9b0" />
