@@ -39,14 +39,15 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='dot-idea settings jar generator')
     parser.add_argument('product', type=str, choices=known_products.keys())
     parser.add_argument('--no-cleanup', default=False, action='store_true')
+    parser.add_argument('--verbose', choices=[0, 1, 2], default=1)
     args = parser.parse_args()
 
     product = args.product
     ident = known_products[product]
     print('Generating settings for %s [%s]' % (product, ident), file=sys.stderr)
 
-    tmpdir = tempfile.mktemp() # NB:
-    print('[D] Temp dir: %s' % tmpdir)
+    tmpdir = tempfile.mktemp()  # NB: we want the dir to not exist, because copytree will create it (or fail)
+    print('Temp dir: %s' % tmpdir)
 
     srcdir = os.path.join(os.getcwd(), 'home', 'Library', 'Preferences', ident)
     shutil.copytree(srcdir, tmpdir)
@@ -54,10 +55,11 @@ if __name__ == '__main__':
     open(os.path.join(tmpdir, 'IntelliJ IDEA Global Settings'), 'a').close()
 
     allfiles = listfiles(tmpdir)
-    print(allfiles)
 
-    with zipfile.ZipFile(product + '-settings.jar', 'a') as jar:
-        for f in allfiles:
+    with zipfile.ZipFile(product + '-settings.jar', 'w') as jar:
+        for f in sorted(allfiles):
+            if args.verbose > 0:
+                print(' + ' + f, file=sys.stderr)
             jar.write(os.path.join(tmpdir, f), f)
 
     if not args.no_cleanup:
