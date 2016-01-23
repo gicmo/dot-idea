@@ -12,7 +12,8 @@ import zipfile
 
 known_products = {
     'pycharm': 'PyCharm50',
-    'clion': 'CLion12'
+    'clion': 'CLion12',
+    'intellij': 'IntelliJIdea15'
 }
 
 
