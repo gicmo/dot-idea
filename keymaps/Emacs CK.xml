@@ -2,6 +2,9 @@
   <action id="DashLauncherAction">
     <keyboard-shortcut first-keystroke="ctrl c" second-keystroke="d" />
   </action>
+  <action id="Generate">
+    <keyboard-shortcut first-keystroke="ctrl c" second-keystroke="g" />
+  </action>
   <action id="RecentFiles">
     <keyboard-shortcut first-keystroke="ctrl c" second-keystroke="r" />
   </action>
