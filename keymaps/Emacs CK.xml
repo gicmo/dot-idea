@@ -5,6 +5,9 @@
   <action id="Generate">
     <keyboard-shortcut first-keystroke="ctrl c" second-keystroke="g" />
   </action>
+  <action id="GotoLine">
+    <keyboard-shortcut first-keystroke="alt g" second-keystroke="g" />
+  </action>
   <action id="RecentFiles">
     <keyboard-shortcut first-keystroke="ctrl c" second-keystroke="r" />
   </action>
