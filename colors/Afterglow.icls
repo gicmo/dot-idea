@@ -642,6 +642,18 @@
         <option name="EFFECT_COLOR" value="6d9cbe" />
       </value>
     </option>
+    <option name="IGNORE.HEADER">
+      <value>
+        <option name="FOREGROUND" value="b8b8b8" />
+        <option name="FONT_TYPE" value="1" />
+      </value>
+    </option>
+    <option name="IGNORE.SECTION">
+      <value>
+        <option name="FOREGROUND" value="a4a4a4" />
+        <option name="FONT_TYPE" value="1" />
+      </value>
+    </option>
     <option name="IMPLICIT_ANONYMOUS_CLASS_PARAMETER_ATTRIBUTES">
       <value>
         <option name="FOREGROUND" value="d0d0ff" />
